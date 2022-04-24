@@ -321,12 +321,41 @@ header h1 {
 .section-five {
     width: 100%;
     height: 100vh;
-    border: 1px solid;
     display: flex;
     justify-content: space-around;
+    background: #dddfec;
 }
 
 .section-five .man-right {
     width: 50%;
-    background: url(images/man2.png) no-repeat center bottom / 60%;
+    background: url(images/man2.png) no-repeat center top / 80%;
+}
+
+.section-five .men-info {
+    margin: 64px 0 0 112px;
+    width: 40%;
+
+}
+
+.section-five .men-info .comma {
+    width: 30%;
+    height: 30%;
+    background: url(images/comme.png) no-repeat center / 100%;
+}
+
+.section-five .men-info>p {
+    font: 20px sans-serif;
+    color: #80818B;
+}
+
+.section-five .men-info .signature {
+    width: 30%;
+    height: 30%;
+    background: url(images/signature.png) no-repeat center / 100%;
+
+}
+
+.section-five .men-info>h4 {
+    font: 25px sans-serif;
+    color: #4f535f;
 }
