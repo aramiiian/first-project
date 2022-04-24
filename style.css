@@ -1,0 +1,331 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+header {
+    height: 100vh;
+    background: url(images/header-bg.jpg) no-repeat top right / cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header nav {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav img {
+    height: 60px;
+    margin-left: 60px;
+}
+
+header nav .burger {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+header nav .burger .dropdown {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 60px;
+    right: -280px;
+    background: linear-gradient(#212121, #181818, #212121);
+    cursor: auto;
+    transition: .7s;
+}
+
+header nav .burger .dropdown .menu {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 32px 5px;
+}
+
+header nav .burger .dropdown .menu .item {
+    font: bold 20px sans-serif;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    padding: 15px 30px;
+    background: rgb(89, 79, 79);
+    color: #181818;
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff;
+    list-style: none;
+    cursor: pointer;
+}
+
+header nav .burger:hover .dropdown {
+    top: 60px;
+    right: -2px;
+}
+
+header nav .burger span {
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    display: block;
+}
+
+header h1 {
+    color: #fff;
+    font: bold 90px sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    padding: 10px 0;
+}
+
+.text-parent {
+    padding-top: 15px;
+}
+
+.text-parent span {
+    color: #fff;
+    font: 25px sans-serif;
+    margin-left: 83px;
+    text-transform: capitalize;
+}
+
+.text-parent span:first-child {
+    margin: 0;
+}
+
+.section-one {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.section-one .left-man {
+    width: 50%;
+    background: url(images/man.png) no-repeat center bottom / 60%;
+}
+
+.section-one .info-for-me {
+    width: 50%;
+    padding: 50px;
+}
+
+.section-one .info-for-me h3 {
+    color: #5A5E66;
+    font: bold 22px sans-serif;
+    padding-bottom: 60px;
+    margin-top: 110px;
+}
+
+.section-one .info-for-me p {
+    color: #5d6066;
+    font: 17px sans-serif;
+    padding-bottom: 50px;
+    width: 76%;
+}
+
+.section-one .info-for-me .but1 {
+    margin-top: 20px;
+    font: bold 20px sans-serif;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    background: linear-gradient(#FF2B48, #FE2B4D, #FF2B48);
+    color: #fff;
+    box-shadow: 2px 3px 5px black;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.section-one .info-for-me .but1:active {
+    box-shadow: 0 0 1px black;
+}
+
+.section-two {
+    width: 100%;
+    background-color: #DDDFEC;
+    display: grid;
+    justify-items: center;
+}
+
+.section-two>h2 {
+    color: #544F50;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 100px 0 20px;
+}
+
+.section-two>h4 {
+    color: #544f50cc;
+}
+
+.section-two .working-parent {
+    display: flex;
+    column-gap: 10px;
+    margin: 70px 0 90px;
+}
+
+.section-two .working-parent>div {
+    text-align: center;
+}
+
+.section-two .working-parent>div>p {
+    font: bold 22px sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.section-two .working-parent>div>i {
+    font-size: 30px;
+    color: #fff;
+    margin: 30%;
+}
+
+.section-two .working-parent .design {
+    width: 200px;
+    height: 200px;
+    background-color: #12c5ff;
+
+}
+
+.section-two .working-parent .development {
+    width: 200px;
+    height: 200px;
+    background-color: #845aee;
+}
+
+.section-two .working-parent .testing {
+    width: 200px;
+    height: 200px;
+    background-color: #022454;
+}
+
+.section-two .working-parent .launch {
+    width: 200px;
+    height: 200px;
+    background-color: #fe2b4b;
+}
+
+.section-three {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+    background: url(images/city.jpg);
+}
+
+.section-three .information {
+    width: 35%;
+    padding: 50px;
+    background-color: #533c46a6;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.section-three .information> :is(h3, b, p) {
+    margin: 30px 0;
+}
+
+.section-four {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    margin: 80px 0 100px;
+
+}
+
+.section-four>h2 {
+    font-size: 40px;
+    color: #544F50;
+}
+
+.section-four>p {
+    font-size: 18px;
+    color: #544F50;
+    margin-bottom: 70px;
+}
+
+.section-four .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+
+}
+
+.section-four .portfolio .img1 {
+    width: 250px;
+    height: 230px;
+    background: url(images/portfolio/pf1.jpg) no-repeat center / 100%;
+}
+
+.section-four .portfolio .img2 {
+    width: 250px;
+    height: 230px;
+    background: url(images/portfolio/pf2.jpg) no-repeat center / 100%;
+}
+
+.section-four .portfolio .img3 {
+    width: 250px;
+    height: 230px;
+    background: url(images/portfolio/pf3.jpg) no-repeat center / 100%;
+}
+
+.section-four .portfolio .img4 {
+    width: 250px;
+    height: 230px;
+    background: url(images/portfolio/pf4.jpg) no-repeat center / 100%;
+}
+
+.section-four .portfolio .img5 {
+    width: 535px;
+    height: 230px;
+    background: url(images/portfolio/pf1.jpg) no-repeat top / 100%;
+}
+
+.section-four .portfolio .img6 {
+    width: 250px;
+    height: 230px;
+    background: url(images/portfolio/pf2.jpg) no-repeat center / 100%;
+}
+
+.section-four .portfolio .img7 {
+    width: 250px;
+    height: 230px;
+    background: url(images/portfolio/pf3.jpg) no-repeat center / 100%;
+}
+
+.section-five {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid;
+    display: flex;
+}
+
+.section-five .man-right {
+    width: 50%;
+    background: url(images/man2.png) no-repeat center bottom / 60%;
+}
