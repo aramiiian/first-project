@@ -323,7 +323,7 @@ header h1 {
     height: 100vh;
     display: flex;
     justify-content: space-around;
-    background: #DDDFEC;
+    background: #dddfec;
 }
 
 .section-five .man-right {
@@ -332,12 +332,12 @@ header h1 {
 }
 
 .section-five .men-info {
-    margin: 4% 0 0 7%;
+    margin: 64px 0 0 112px;
     width: 40%;
 
 }
 
-.section-five .men-info .comme {
+.section-five .men-info .comma {
     width: 30%;
     height: 30%;
     background: url(images/comme.png) no-repeat center / 100%;
